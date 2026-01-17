@@ -43,8 +43,6 @@ namespace Program
         public static void Main()
         {
             Console.WriteLine("Welcome to the Hero's Menu!");
-            //recieve input loop/switch thing
-            //show menu
             string menuQuery = "Where would you like to go?\n     1. Create a Hero \n     2. View your Hero \n     3. Edit your Hero \n     4. Settings \n     5. Exit";
             while (true)
             {
@@ -81,7 +79,7 @@ namespace Program
                         break;
 
                     case MainMenu.developer:
-                        Console.WriteLine(":89. Welcome to the developer's side.\nOkay bye");
+                        Console.WriteLine(":89\nWelcome to the developer's side.\nOkay bye\n");
                         break;
                     default:
                         Console.WriteLine("You think you're clever, huh? Try again Hero.'");
@@ -95,7 +93,7 @@ namespace Program
         {
             public static void GetEnum(string question, out MainMenu menuChoice)
             {
-                menuChoice = 0;
+                menuChoice = MainMenu.viewMenu;
                 while (true)
                 {
                     Console.WriteLine(question);
