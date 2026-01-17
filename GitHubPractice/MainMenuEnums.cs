@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace MainMenuEnums
 {
-    enum MainMenu
+    public enum MainMenu
     {
+        viewMenu = 0,
         createHero = 1,
         viewHero = 2,
         editHero = 3,
